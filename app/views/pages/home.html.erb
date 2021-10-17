@@ -1,0 +1,10 @@
+<h1>Welcom in HR Question</h1>
+<p>  Choose language</p>
+   
+  <tbody>
+    <% @languages.each do |language| %>
+      <li>
+        <td><%=link_to language.name, languages_path(@language)%></td>   
+      </li>
+    <% end %>
+  </tbody>
